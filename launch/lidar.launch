@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="velodyne_pointcloud" type="velodyne_nodelet_manager" name="velodyne_nodelet_manager" />
+  <node pkg="velodyne_pointcloud" type="cloud_nodelet" name="velodyne_cloud_nodelet" />
+</launch>

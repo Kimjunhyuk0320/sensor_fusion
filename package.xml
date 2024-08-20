@@ -1,0 +1,17 @@
+<package format="2">
+  <name>lidar_camera_mapping</name>
+  <version>0.0.1</version>
+  <description>The lidar_camera_mapping package</description>
+  <maintainer email="user@example.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>pcl_ros</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+
+</package>

@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find lidar_camera_mapping)/launch/lidar.launch" />
+  <include file="$(find lidar_camera_mapping)/launch/realsense.launch" />
+
+  <node name="data_collector" pkg="lidar_camera_mapping" type="data_collector.py" output="screen" />
+  <node name="yolo_inference" pkg="lidar_camera_mapping" type="yolo_inference.py" output="screen" />
+  <node name="map_updater" pkg="lidar_camera_mapping" type="map_updater.py" output="screen" />
+  <node name="map_visualizer" pkg="lidar_camera_mapping" type="map_visualizer" output="screen" />
+</launch>
